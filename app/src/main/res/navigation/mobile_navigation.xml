@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.sensacion.ui.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_cuenta"
+        android:name="com.example.sensacion.ui.CuentaFragment"
+        android:label="Mi cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+
+    <fragment
+        android:id="@+id/nav_catalogo"
+        android:name="com.example.sensacion.ui.CatalogoFragment"
+        android:label="Catálogo"
+        tools:layout="@layout/fragment_catalogo" />
+
+    <fragment
+        android:id="@+id/nav_listadeseos"
+        android:name="com.example.sensacion.ui.ListaDeseosFragment"
+        android:label="Lista de deseos"
+        tools:layout="@layout/fragment_lista_deseos"/>
+
+    <fragment
+        android:id="@+id/nav_carritocompras"
+        android:name="com.example.sensacion.ui.CarritoComprasFragment"
+        android:label="Carrito de compras"
+        tools:layout="@layout/fragment_carrito_compras"/>
+
+    <fragment
+        android:id="@+id/nav_comprar"
+        android:name="com.example.sensacion.ui.ComprarFragment"
+        android:label="Comprar"
+        tools:layout="@layout/fragment_comprar"/>
+
+</navigation>

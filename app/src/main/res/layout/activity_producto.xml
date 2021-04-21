@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductoActivity"
+    android:id="@+id/srl_articulo">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_detalleArticulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/show_flotante"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:elevation="15dp">
+
+            <ImageView
+                android:id="@+id/iv_imagen_producto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:contentDescription="foto producto"/>
+
+            <TextView
+                android:id="@+id/tv_nombre_articulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:text="_TITULO_"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tv_categoria_articulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="_CATEGORIA_"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:drawablePadding="10dp"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_descripcion_articulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="_descripcion_"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="12"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:id="@+id/tv_precio_articulo"
+                android:layout_width="1dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:text="_precio_"
+                android:drawableLeft="@drawable/money"
+                android:drawablePadding="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="15dp"
+                android:textSize="30sp"
+                android:textColor="#FFC107"
+                android:drawableTint="#FFC107"/>
+
+                <Button
+                    android:id="@+id/btn_megusta"
+                    android:layout_width="1dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/favorite"
+                    android:drawableTint="#000000"
+                    android:backgroundTint="#fff"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:onClick="agregardeseo"/>
+
+            </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/shopping_cart"
+                    android:drawableTint="#fff"
+                    android:background="@drawable/bordes_redondos"
+                    android:padding="10dp"
+                    android:text="Añadir a mi  Carrito"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

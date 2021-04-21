@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".LoginActivity"
+android:background="#EFEFEF">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/logo"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="10dp"
+        android:textColorHint="@color/black"
+        app:counterEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User"
+            android:drawableLeft="@drawable/ic_usuario"
+            android:maxLength="30"
+            android:padding="14sp"
+
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bordes_edidtex">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        app:counterEnabled="true"
+        android:layout_marginHorizontal="25dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_contrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:drawableLeft="@drawable/ic_entrar"
+            android:inputType="textPassword"
+            android:padding="14sp"
+            android:maxLength="8"
+            android:background="@drawable/bordes_edidtex">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginVertical="50dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/bordes_redondos"
+        android:onClick="login"/>
+    <!--android:onClick="irAhome" -->
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No tienes una cuenta?, Registrate aqui"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:backgroundTint="#fff"
+        android:padding="15dp"
+        android:background="@drawable/bordes_redondos"
+        android:onClick="navRegistro"/>
+
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
